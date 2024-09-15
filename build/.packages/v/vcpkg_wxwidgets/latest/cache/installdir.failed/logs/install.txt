@@ -1,0 +1,206 @@
+Computing installation plan...
+The following packages will be built and installed:
+  * expat:x64-mingw-static@2.6.2#1
+  * libjpeg-turbo:x64-mingw-static@3.0.2#1
+  * liblzma:x64-mingw-static@5.6.2
+  * libpng:x64-mingw-static@1.6.43#2
+  * nanosvg:x64-mingw-static@2023-12-29
+  * pcre2[core,jit,platform-default-features]:x64-mingw-static@10.43
+  * tiff[core,jpeg,lzma,zip]:x64-mingw-static@4.6.0#4
+    wxwidgets[core,debug-support,sound]:x64-mingw-static@3.2.5#1
+  * zlib:x64-mingw-static@1.3.1
+Additional packages (*) will be modified to complete this operation.
+Detecting compiler hash for triplet x64-mingw-static...
+Compiler found: /opt/llvm-mingw-20240619-ucrt-ubuntu-20.04-x86_64/bin/x86_64-w64-mingw32-g++
+Restored 0 package(s) from /home/brickmaster/.cache/vcpkg/archives in 512 us. Use --debug to see more details.
+Installing 1/9 expat:x64-mingw-static@2.6.2#1...
+Building expat:x64-mingw-static@2.6.2#1...
+/home/brickmaster/vcpkg/triplets/community/x64-mingw-static.cmake: info: loaded community triplet from here. Community triplets are not built in the curated registry and are thus less likely to succeed.
+-- Downloading https://github.com/libexpat/libexpat/archive/R_2_6_2.tar.gz -> libexpat-libexpat-R_2_6_2.tar.gz...
+-- Extracting source /home/brickmaster/vcpkg/downloads/libexpat-libexpat-R_2_6_2.tar.gz
+-- Using source at /home/brickmaster/vcpkg/buildtrees/expat/src/R_2_6_2-7c322c113f.clean
+-- Configuring x64-mingw-static
+-- Building x64-mingw-static-dbg
+-- Building x64-mingw-static-rel
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/expat_x64-mingw-static/lib/pkgconfig/expat.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/expat_x64-mingw-static/debug/lib/pkgconfig/expat.pc
+-- Installing: /home/brickmaster/vcpkg/packages/expat_x64-mingw-static/share/expat/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 35.8 ms.
+Elapsed time to handle expat:x64-mingw-static: 19 s
+expat:x64-mingw-static package ABI: 0d694d177ff48d223770b883a060ec682b4e4360b7e251770c2cb585379dd1b2
+Installing 2/9 libjpeg-turbo:x64-mingw-static@3.0.2#1...
+Building libjpeg-turbo:x64-mingw-static@3.0.2#1...
+/home/brickmaster/vcpkg/triplets/community/x64-mingw-static.cmake: info: loaded community triplet from here. Community triplets are not built in the curated registry and are thus less likely to succeed.
+-- Downloading https://github.com/libjpeg-turbo/libjpeg-turbo/archive/3.0.2.tar.gz -> libjpeg-turbo-libjpeg-turbo-3.0.2.tar.gz...
+-- Extracting source /home/brickmaster/vcpkg/downloads/libjpeg-turbo-libjpeg-turbo-3.0.2.tar.gz
+-- Applying patch add-options-for-exes-docs-headers.patch
+-- Applying patch workaround_cmake_system_processor.patch
+-- Using source at /home/brickmaster/vcpkg/buildtrees/libjpeg-turbo/src/3.0.2-c04fb0ca25.clean
+-- Configuring x64-mingw-static
+-- Building x64-mingw-static-dbg
+-- Building x64-mingw-static-rel
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/libjpeg-turbo_x64-mingw-static/lib/pkgconfig/libjpeg.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/libjpeg-turbo_x64-mingw-static/lib/pkgconfig/libturbojpeg.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/libjpeg-turbo_x64-mingw-static/debug/lib/pkgconfig/libjpeg.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/libjpeg-turbo_x64-mingw-static/debug/lib/pkgconfig/libturbojpeg.pc
+-- Installing: /home/brickmaster/vcpkg/packages/libjpeg-turbo_x64-mingw-static/share/libjpeg-turbo/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 307 ms.
+Elapsed time to handle libjpeg-turbo:x64-mingw-static: 25 s
+libjpeg-turbo:x64-mingw-static package ABI: 36f09c75d0d8bbbdd850e040a9a05f21c46fa0556343ab697fef6d9f89af7e20
+Installing 3/9 liblzma:x64-mingw-static@5.6.2...
+Building liblzma:x64-mingw-static@5.6.2...
+/home/brickmaster/vcpkg/triplets/community/x64-mingw-static.cmake: info: loaded community triplet from here. Community triplets are not built in the curated registry and are thus less likely to succeed.
+-- Downloading https://github.com/tukaani-project/xz/archive/v5.6.2.tar.gz -> tukaani-project-xz-v5.6.2.tar.gz...
+-- Extracting source /home/brickmaster/vcpkg/downloads/tukaani-project-xz-v5.6.2.tar.gz
+-- Applying patch win_output_name.patch
+-- Applying patch build-tools.patch
+-- Using source at /home/brickmaster/vcpkg/buildtrees/liblzma/src/v5.6.2-7484848813.clean
+-- Configuring x64-mingw-static
+-- Building x64-mingw-static-dbg
+-- Building x64-mingw-static-rel
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/liblzma_x64-mingw-static/lib/pkgconfig/liblzma.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/liblzma_x64-mingw-static/debug/lib/pkgconfig/liblzma.pc
+-- Installing: /home/brickmaster/vcpkg/packages/liblzma_x64-mingw-static/share/liblzma/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 70 ms.
+Elapsed time to handle liblzma:x64-mingw-static: 29 s
+liblzma:x64-mingw-static package ABI: 085fe0e04984d165dd0b6ef6884854920980b9494aedb370cadd32c08307f27a
+Installing 4/9 zlib:x64-mingw-static@1.3.1...
+Building zlib:x64-mingw-static@1.3.1...
+/home/brickmaster/vcpkg/triplets/community/x64-mingw-static.cmake: info: loaded community triplet from here. Community triplets are not built in the curated registry and are thus less likely to succeed.
+-- Downloading https://github.com/madler/zlib/archive/v1.3.1.tar.gz -> madler-zlib-v1.3.1.tar.gz...
+-- Extracting source /home/brickmaster/vcpkg/downloads/madler-zlib-v1.3.1.tar.gz
+-- Applying patch 0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch
+-- Applying patch 0002-build-static-or-shared-not-both.patch
+-- Applying patch 0003-android-and-mingw-fixes.patch
+-- Using source at /home/brickmaster/vcpkg/buildtrees/zlib/src/v1.3.1-2e5db616bf.clean
+-- Configuring x64-mingw-static
+-- Building x64-mingw-static-dbg
+-- Building x64-mingw-static-rel
+-- Installing: /home/brickmaster/vcpkg/packages/zlib_x64-mingw-static/share/zlib/vcpkg-cmake-wrapper.cmake
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/zlib_x64-mingw-static/lib/pkgconfig/zlib.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/zlib_x64-mingw-static/debug/lib/pkgconfig/zlib.pc
+-- Installing: /home/brickmaster/vcpkg/packages/zlib_x64-mingw-static/share/zlib/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 21.7 ms.
+Elapsed time to handle zlib:x64-mingw-static: 10 s
+zlib:x64-mingw-static package ABI: 0c655ad9106a7021fc059e29e0501d5db2d78d6434c19d0843bb20c4d37b7d32
+Installing 5/9 libpng:x64-mingw-static@1.6.43#2...
+Building libpng:x64-mingw-static@1.6.43#2...
+/home/brickmaster/vcpkg/triplets/community/x64-mingw-static.cmake: info: loaded community triplet from here. Community triplets are not built in the curated registry and are thus less likely to succeed.
+-- Downloading https://github.com/glennrp/libpng/archive/v1.6.43.tar.gz -> glennrp-libpng-v1.6.43.tar.gz...
+-- Extracting source /home/brickmaster/vcpkg/downloads/glennrp-libpng-v1.6.43.tar.gz
+-- Applying patch cmake.patch
+-- Applying patch fix-export-targets.patch
+-- Applying patch libm.patch
+-- Applying patch pkgconfig.patch
+-- Applying patch fix-msa-support-for-mips.patch
+-- Using source at /home/brickmaster/vcpkg/buildtrees/libpng/src/v1.6.43-e957a32120.clean
+-- Configuring x64-mingw-static
+-- Building x64-mingw-static-dbg
+-- Building x64-mingw-static-rel
+-- Installing: /home/brickmaster/vcpkg/packages/libpng_x64-mingw-static/share/png/vcpkg-cmake-wrapper.cmake
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/libpng_x64-mingw-static/lib/pkgconfig/libpng16.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/libpng_x64-mingw-static/debug/lib/pkgconfig/libpng16.pc
+-- Installing: /home/brickmaster/vcpkg/packages/libpng_x64-mingw-static/debug/lib/pkgconfig/libpng.pc
+-- Installing: /home/brickmaster/vcpkg/packages/libpng_x64-mingw-static/lib/pkgconfig/libpng.pc
+-- Installing: /home/brickmaster/vcpkg/packages/libpng_x64-mingw-static/share/libpng/usage
+-- Installing: /home/brickmaster/vcpkg/packages/libpng_x64-mingw-static/share/libpng/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 61 ms.
+Elapsed time to handle libpng:x64-mingw-static: 19 s
+libpng:x64-mingw-static package ABI: f0a9eb7aa182d802ed131263746b3d156c21758de53eb10e747c5a9af46c45b2
+Installing 6/9 nanosvg:x64-mingw-static@2023-12-29...
+Building nanosvg:x64-mingw-static@2023-12-29...
+/home/brickmaster/vcpkg/triplets/community/x64-mingw-static.cmake: info: loaded community triplet from here. Community triplets are not built in the curated registry and are thus less likely to succeed.
+-- Downloading https://github.com/memononen/nanosvg/archive/93ce879dc4c04a3ef1758428ec80083c38610b1f.tar.gz -> memononen-nanosvg-93ce879dc4c04a3ef1758428ec80083c38610b1f.tar.gz...
+-- Extracting source /home/brickmaster/vcpkg/downloads/memononen-nanosvg-93ce879dc4c04a3ef1758428ec80083c38610b1f.tar.gz
+-- Applying patch fltk.patch
+-- Using source at /home/brickmaster/vcpkg/buildtrees/nanosvg/src/3c38610b1f-dc4edc4939.clean
+-- Configuring x64-mingw-static
+-- Building x64-mingw-static-dbg
+-- Building x64-mingw-static-rel
+-- Installing: /home/brickmaster/vcpkg/packages/nanosvg_x64-mingw-static/share/nanosvg/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 16.7 ms.
+Elapsed time to handle nanosvg:x64-mingw-static: 9.6 s
+nanosvg:x64-mingw-static package ABI: f66ddfcd968fd2df3a4f92136dc4baccadcde9026af0a71d21f3956f6ae6ad13
+Installing 7/9 pcre2[core,jit,platform-default-features]:x64-mingw-static@10.43...
+Building pcre2[core,jit,platform-default-features]:x64-mingw-static@10.43...
+/home/brickmaster/vcpkg/triplets/community/x64-mingw-static.cmake: info: loaded community triplet from here. Community triplets are not built in the curated registry and are thus less likely to succeed.
+-- Downloading https://github.com/PCRE2Project/pcre2/archive/pcre2-10.43.tar.gz -> PCRE2Project-pcre2-pcre2-10.43.tar.gz...
+-- Extracting source /home/brickmaster/vcpkg/downloads/PCRE2Project-pcre2-pcre2-10.43.tar.gz
+-- Applying patch pcre2-10.35_fix-uwp.patch
+-- Applying patch no-static-suffix.patch
+-- Applying patch fix-cmake.patch
+-- Using source at /home/brickmaster/vcpkg/buildtrees/pcre2/src/cre2-10.43-769392aa5b.clean
+-- Configuring x64-mingw-static
+-- Building x64-mingw-static-dbg
+-- Building x64-mingw-static-rel
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/lib/pkgconfig/libpcre2-16.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/lib/pkgconfig/libpcre2-32.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/lib/pkgconfig/libpcre2-8.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/lib/pkgconfig/libpcre2-posix.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/debug/lib/pkgconfig/libpcre2-16.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/debug/lib/pkgconfig/libpcre2-32.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/debug/lib/pkgconfig/libpcre2-8.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/debug/lib/pkgconfig/libpcre2-posix.pc
+-- Installing: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/share/pcre2/usage
+-- Installing: /home/brickmaster/vcpkg/packages/pcre2_x64-mingw-static/share/pcre2/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 269 ms.
+Elapsed time to handle pcre2:x64-mingw-static: 24 s
+pcre2:x64-mingw-static package ABI: 7d9a8c23369702d3a697b1851b270fc2a17e941a087b14937c532e47577e9bd5
+Installing 8/9 tiff[core,jpeg,lzma,zip]:x64-mingw-static@4.6.0#4...
+Building tiff[core,jpeg,lzma,zip]:x64-mingw-static@4.6.0#4...
+/home/brickmaster/vcpkg/triplets/community/x64-mingw-static.cmake: info: loaded community triplet from here. Community triplets are not built in the curated registry and are thus less likely to succeed.
+-- Downloading https://gitlab.com/libtiff/libtiff/-/archive/v4.6.0/libtiff-v4.6.0.tar.gz -> libtiff-libtiff-v4.6.0.tar.gz...
+-- Extracting source /home/brickmaster/vcpkg/downloads/libtiff-libtiff-v4.6.0.tar.gz
+-- Applying patch FindCMath.patch
+-- Applying patch requires-lerc.patch
+-- Using source at /home/brickmaster/vcpkg/buildtrees/tiff/src/v4.6.0-cea7694842.clean
+-- Configuring x64-mingw-static
+-- Building x64-mingw-static-dbg
+-- Building x64-mingw-static-rel
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/tiff_x64-mingw-static/lib/pkgconfig/libtiff-4.pc
+-- Fixing pkgconfig file: /home/brickmaster/vcpkg/packages/tiff_x64-mingw-static/debug/lib/pkgconfig/libtiff-4.pc
+-- Installing: /home/brickmaster/vcpkg/packages/tiff_x64-mingw-static/share/tiff/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 96.6 ms.
+Elapsed time to handle tiff:x64-mingw-static: 1.5 min
+tiff:x64-mingw-static package ABI: 2a24e768b4ca4903e131e572686963641dfedfa0f02ada86e458bfe1c5cad291
+Installing 9/9 wxwidgets[core,debug-support,sound]:x64-mingw-static@3.2.5#1...
+Building wxwidgets[core,debug-support,sound]:x64-mingw-static@3.2.5#1...
+/home/brickmaster/vcpkg/triplets/community/x64-mingw-static.cmake: info: loaded community triplet from here. Community triplets are not built in the curated registry and are thus less likely to succeed.
+-- Downloading https://github.com/wxWidgets/wxWidgets/archive/v3.2.5.tar.gz -> wxWidgets-wxWidgets-v3.2.5.tar.gz...
+-- Extracting source /home/brickmaster/vcpkg/downloads/wxWidgets-wxWidgets-v3.2.5.tar.gz
+-- Applying patch install-layout.patch
+-- Applying patch relocatable-wx-config.patch
+-- Applying patch nanosvg-ext-depend.patch
+-- Applying patch fix-libs-export.patch
+-- Applying patch fix-pcre2.patch
+-- Applying patch gtk3-link-libraries.patch
+-- Applying patch sdl2.patch
+-- Using source at /home/brickmaster/vcpkg/buildtrees/wxwidgets/src/v3.2.5-737796f0e2.clean
+-- Configuring x64-mingw-static
+-- Building x64-mingw-static-dbg
+-- Building x64-mingw-static-rel
+CMake Error at scripts/cmake/vcpkg_copy_tool_dependencies.cmake:31 (message):
+  Could not find PowerShell Core; please open an issue to report this.
+Call Stack (most recent call first):
+  scripts/cmake/vcpkg_copy_tools.cmake:48 (vcpkg_copy_tool_dependencies)
+  ports/wxwidgets/portfile.cmake:109 (vcpkg_copy_tools)
+  scripts/ports.cmake:192 (include)
+
+
+error: building wxwidgets:x64-mingw-static failed with: BUILD_FAILED
+Elapsed time to handle wxwidgets:x64-mingw-static: 2.7 min
+Please ensure you're using the latest port files with `git pull` and `vcpkg update`.
+Then check for known issues at:
+  https://github.com/microsoft/vcpkg/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+wxwidgets
+You can submit a new issue at:
+  https://github.com/microsoft/vcpkg/issues/new?title=[wxwidgets]+Build+error+on+x64-mingw-static&body=Copy+issue+body+from+%2Fhome%2Fbrickmaster%2Fvcpkg%2Finstalled%2Fvcpkg%2Fissue_body.md
+
+

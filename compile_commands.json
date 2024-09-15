@@ -1,0 +1,6 @@
+[
+{
+  "directory": "/home/brickmaster/projects/ViXeL-project-manager",
+  "arguments": ["/usr/bin/x86_64-w64-mingw32-g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++2a", "-Isrc", "-DWXUSINGDLL", "-D__WXMSW__", "-DwxSUFFIX=ud", "-I", "/home/brickmaster/vcpkg/installed/x64-mingw-static/lib/pkgconfig/../../include", "-I", "/home/brickmaster/.xmake/packages/w/wxwidgets_mingw/3.2.0/468c4daf874a437695964636e29cd93f/include", "-DNDEBUG", "-o", "build/.objs/test/mingw/x86_64/release/src/AppMain.cpp.obj", "src/AppMain.cpp"],
+  "file": "src/AppMain.cpp"
+}]
