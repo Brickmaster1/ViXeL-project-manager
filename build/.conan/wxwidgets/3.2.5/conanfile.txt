@@ -1,2 +1,0 @@
-[requires]
-wxwidgets/3.2.5
