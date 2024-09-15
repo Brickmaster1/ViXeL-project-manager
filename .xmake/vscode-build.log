@@ -1,7 +1,0 @@
-checking for mingw directory ... /usr
-note: install or modify (m) these packages (pass -y to skip confirm)?
-in conan:
-  -> conan::wxwidgets latest 
-please input: y (y/n/m)
-  => installing conan::wxwidgets .. (1/conan)   => install conan::wxwidgets latest .. failed
-error: install failed!
