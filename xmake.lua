@@ -15,16 +15,16 @@ if is_mode("release") then
     set_strip("all")
 end
 
-add_repositories("packages_local packages_local")
+--add_repositories("packages_local packages_local")
 
 add_requires("vcpkg::libgit2")
-add_requires("wxwidgets_mingw")
+add_requires("vcpkg::wxwidgets")
 
 target("test")
     set_kind("binary")
     add_files("src/**.cpp")
     add_headerfiles("src/**.h")
     add_includedirs("src")
-    add_packages("vcpkg::libgit2", "wxwidgets_mingw")
-    --add_cxxflags("-static", "-static-libgcc", "-static-libstdc++", {force = true})
+    add_packages("vcpkg::libgit2", "vcpkg::wxwidgets")
+    add_cxxflags("-static", "-static-libgcc", "-static-libstdc++", {force = true})
 target_end()

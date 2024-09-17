@@ -1,6 +1,6 @@
 [
 {
   "directory": "/home/brickmaster/projects/ViXeL-project-manager",
-  "arguments": ["/usr/bin/x86_64-w64-mingw32-g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++2a", "-Isrc", "-isystem", "/home/brickmaster/vcpkg/installed/x64-mingw-static/lib/pkgconfig/../../include", "-DNDEBUG", "-o", "build/.objs/test/mingw/x86_64/release/src/AppMain.cpp.obj", "src/AppMain.cpp"],
+  "arguments": ["/usr/bin/x86_64-w64-mingw32-g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++2a", "-Isrc", "-isystem", "/home/brickmaster/vcpkg/installed/x64-mingw-static/lib/pkgconfig/../../include", "-isystem", "/home/brickmaster/vcpkg/installed/x64-mingw-static/include", "-static", "-static-libgcc", "-static-libstdc++", "-DNDEBUG", "-o", "build/.objs/test/mingw/x86_64/release/src/AppMain.cpp.obj", "src/AppMain.cpp"],
   "file": "src/AppMain.cpp"
 }]
