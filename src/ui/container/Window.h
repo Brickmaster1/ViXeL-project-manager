@@ -1,8 +1,7 @@
 #pragma once
 
-#include "ui/ui.hpp"
+//#include "ui/Control.h"
 #include "Container.h"
-#include "ui/Control.h"
 #include "DataUtil.h"
 
 #include <ui.h>
@@ -46,15 +45,11 @@ public:
     Window* setSize(Rect2d size) override { Control::setSize(size); return this; }
     Window* setName(std::string name) override { Control::setName(name); return this; }
 
-    void onAddChild(ui::ContainerControls container, ui::Controls control) override;
-    // Window* addChild(ui::Controls child) override;
-    // std::vector<ui::Controls>::iterator getChildren() override;
-    // Window* removeChild(ui::Controls child) override;
-
-    uiWindow* getWindow() { return window; }
+    Window* addChild(ui::Controls child) override { Container::addChild(child); return this; }
+    Window* removeChild(ui::Controls child) override { Container::removeChild(child); return this; }
 
 protected:
-
+    
 
 private:
     static int internalOnClose(uiWindow* window, void* instance);

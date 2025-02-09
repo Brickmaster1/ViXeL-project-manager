@@ -1,10 +1,17 @@
 #include "Container.h"
-#include "DataUtil.h"
 #include "ui/Control.h"
 #include "ui/ui.hpp"
 
 #include <functional>
 #include <memory>
+
+Container::Container() {
+
+}
+
+Container::~Container() {
+    
+}
 
 Container* Container::addChild(ui::Controls child) {
     // if(prevParent != nullptr) {
@@ -15,10 +22,7 @@ Container* Container::addChild(ui::Controls child) {
     //     }
     // }, container);
     // }
-    //auto prevParent = std::get<std::shared_ptr<Control>>(child)->getParent();
-    
-    //auto& prevParent = getSpecificType(child);
-    
+    auto prevParent = std::get<std::shared_ptr<Control>>(child)->getParent();
     containerChildren.push_back(child);
     if(control != nullptr) {
         //Control::onReparent(std::shared_ptr<Container>(this));

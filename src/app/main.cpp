@@ -6,6 +6,10 @@
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 
+//#include <git2.h>
+//#include 
+#include <git2cpp/repo.h>
+
 int main() {
     glfwInit();
     
@@ -23,6 +27,10 @@ int main() {
         ->setSize({screenSize.x / 4, screenSize.y / 4})
         ->createAndShow();
     
+    const char* dir = ".";
+    git::Repository repo{dir};
+    repo.index();
+
     ui::AppMain();
     ui::AppUninit();
 }

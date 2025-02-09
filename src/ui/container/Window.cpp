@@ -81,6 +81,35 @@ Window* Window::setResizable(bool isResizable) {
     return this;
 }
 
-void Window::onAddChild(ui::ContainerControls container, ui::Controls control) {
-    
+Window* Window::setParent(ui::Controls parent) {
+    controlParent = parent;
+    if(control != nullptr) {
+        uiControlParent(std::get<std::shared_ptr<Control>>(parent)->getControl());
+    }
+    return this;
 }
+
+// Window* Window::addChild(ui::Controls child) {
+//     auto prevParent = std::get<std::shared_ptr<Control>>(child)->getParent();
+//     if(prevParent != nullptr) {
+//         //prevParent->
+//     }
+    
+//     windowChildren.push_back(child);
+//     if(control != nullptr) {
+//         uiWindowSetChild(window, std::get<std::shared_ptr<Control>>(child)->getControl());
+//     }
+//     return this;
+// }
+
+// std::vector<ui::Controls>::iterator Window::getChildren() {
+//     return windowChildren.begin();
+// }
+
+// Window* Window::removeChild(ui::Controls child) {
+//     auto val = std::find(windowChildren.begin(), windowChildren.end(), child);
+//     if(val != windowChildren.end()) {
+//         windowChildren.erase(val);
+//     }
+//     return this;
+// }
